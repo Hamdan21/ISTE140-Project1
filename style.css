@@ -6,8 +6,8 @@
 .header{
     min-height: 100vh;
     width:  100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);
     background-position: center;
-    background-color: #3d2838;
     background-size: cover;
     position: relative;
 }
@@ -16,7 +16,7 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    background-color:#f5f5dca9;
+
 }
 nav img{
     width: 220px;
@@ -40,7 +40,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: rgb(16, 20, 141);
+    background: rgb(136, 33, 7);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -97,17 +97,26 @@ nav img{
 
 /*--Cusine--*/
 .cusines{
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    background-color: #FFFBF1 ;
+    padding-top: 75px;
 
 }
 .cusines h1{
-    font-size: 50px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    font-family: 'Satisfy', cursive;
     font-weight: 600;
     font-stretch: extra-expanded;
+    color: black;
+    text-shadow: 1px 1px white,
+    1.5px 1.5px red,
+    2px 2px black,
+    10px 10px 25px #2c3958,
+    -10px 10px 25px #2c3958,
+    -10px -10px 25px #2c3958,
+    10px -10px 25px #2c3958;
 }
 p{
     color: white;
@@ -119,13 +128,13 @@ p{
 }
 
 .row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 3.9%;
+    display:inline-flex; 
+    justify-content:space-between;
 }
 .course-col{
     flex-basis: 31%;
-    background: #2c3968;
+    background: #2c3958;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -137,10 +146,11 @@ p{
     margin-top: 10px;
     width:min-content;
 }
-h3{
+.course-col h3{
     text-align: center;
     color: white;
-    text-shadow: 2px 2px red;
+    text-shadow: 1px 1px black,
+    2px 2px red;
     font-weight: bold;
     margin: center;
 }
@@ -150,5 +160,40 @@ h3{
 
 .course-col:hover{
     box-shadow: 0 0 100px 30px rgba(0,0,0,0.2);
+
+}
+
+/*------locations--------*/
+.locations{
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.locations h1{
+    font-size: 40px;
+}
+.locations p{
+    color: black;
+    font-size: medium;
+}
+.locations-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
 
 }
